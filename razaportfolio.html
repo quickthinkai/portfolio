@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Raza Ahmad - FlutterFlow Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: 'LucideIcons';
+        src: url(https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.ttf) format('truetype');
+      }
+      .lucide {
+        font-family: 'LucideIcons';
+        font-size: 1.25rem; /* Adjust size as needed */
+        line-height: 1;
+        vertical-align: middle;
+        margin-right: 0.5rem; /* Space between icon and text */
+      }
+      /* Basic styling */
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc; /* Tailwind gray-50 */
+        color: #1f2937; /* Tailwind gray-800 */
+      }
+      .section {
+        padding: 4rem 1rem; /* py-16 px-4 */
+      }
+      @media (min-width: 768px) {
+        .section {
+          padding: 6rem 2rem; /* md:py-24 md:px-8 */
+        }
+      }
+      .section-title {
+        font-size: 2.25rem; /* text-4xl */
+        font-weight: 700; /* font-bold */
+        margin-bottom: 2rem; /* mb-8 */
+        text-align: center;
+      }
+      .card {
+        background-color: white;
+        border-radius: 0.75rem; /* rounded-xl */
+        padding: 1.5rem; /* p-6 */
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* shadow-md */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* hover:shadow-lg */
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #4f46e5; /* bg-indigo-600 */
+        color: white;
+        padding: 0.75rem 1.5rem; /* py-3 px-6 */
+        border-radius: 0.5rem; /* rounded-lg */
+        font-weight: 600; /* font-semibold */
+        text-align: center;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+      }
+      .cta-button:hover {
+        background-color: #4338ca; /* hover:bg-indigo-700 */
+      }
+      nav a {
+        transition: color 0.3s ease;
+      }
+      nav a:hover {
+          color: #4f46e5; /* hover:text-indigo-600 */
+      }
+    </style>
+    </head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-indigo-600">Ahmed Raza Ahmad</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-600 font-medium">Home</a>
+                <a href="#about" class="text-gray-600 font-medium">About</a>
+                <a href="#services" class="text-gray-600 font-medium">Services</a>
+                <a href="#portfolio" class="text-gray-600 font-medium">Portfolio</a>
+                <a href="#blog" class="text-gray-600 font-medium">Blog</a>
+                <a href="#contact" class="text-gray-600 font-medium">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#home" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#services" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Services</a>
+            <a href="#portfolio" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Portfolio</a>
+            <a href="#blog" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Blog</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="section bg-gradient-to-br from-indigo-100 via-white to-purple-100 text-center">
+            <div class="container mx-auto px-4">
+                <img src="https://placehold.co/150x150/e0e7ff/4f46e5?text=ARA" alt="Ahmed Raza Ahmad" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 shadow-lg border-4 border-white">
+
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Ahmed Raza Ahmad</h1>
+                <p class="text-xl md:text-2xl font-semibold text-indigo-700 mb-6">"Building Scalable No-Code & Low-Code Apps with FlutterFlow"</p>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+                    I am Ahmed Raza Ahmad, a skilled FlutterFlow developer, specializing in building stunning, scalable, and high-performance applications using FlutterFlow and Firebase.
+                </p>
+                <a href="#contact" class="cta-button">
+                    Let's Build Your App
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title">About Me <span class="lucide">&#xF6B7;</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">My Background</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Passionate about leveraging the power of no-code and low-code platforms, I specialize in FlutterFlow to bring ideas to life quickly and efficiently. My journey involves mastering FlutterFlow's capabilities and integrating them seamlessly with robust backends like Firebase and custom APIs (e.g., Laravel) to create sophisticated applications.
+                        </p>
+                         <p class="text-gray-600 leading-relaxed">
+                            I focus on delivering high-quality, user-centric mobile and web applications that not only look great but also perform exceptionally well, handling complex logic, state management, and integrations smoothly.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Skills & Expertise</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>FlutterFlow Development</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>Google Gemini API Integration</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>Firebase & API Integration (incl. Laravel)</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>State Management (Riverpod, Provider, Bloc concepts adapted)</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>JWT Authentication in FlutterFlow</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>Discord & Apple Login in FlutterFlow</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>FlutterFlow Offline & Online Functionality</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>Firebase Remote Config</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>Custom Functions in FlutterFlow</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>Flutter & Dart Development (Understanding)</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>App Deployment (Android & iOS)</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>UI/UX Design in FlutterFlow</li>
+                            <li class="flex items-center text-gray-700"><span class="lucide text-green-500">&#xF1C3;</span>Web & Mobile App Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title">Services <span class="lucide">&#xF166;</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card text-center">
+                        <span class="lucide text-3xl text-indigo-600 mb-3 inline-block">&#xF51E;</span> <h3 class="text-xl font-semibold mb-2">Custom FlutterFlow Apps</h3>
+                        <p class="text-gray-600">Building bespoke mobile and web applications tailored to your specific needs using FlutterFlow.</p>
+                    </div>
+                    <div class="card text-center">
+                        <span class="lucide text-3xl text-indigo-600 mb-3 inline-block">&#xF2F4;</span> <h3 class="text-xl font-semibold mb-2">Firebase & Backend Integration</h3>
+                        <p class="text-gray-600">Seamless integration with Firebase (Auth, Firestore, Storage) and custom backend APIs.</p>
+                    </div>
+                    <div class="card text-center">
+                        <span class="lucide text-3xl text-indigo-600 mb-3 inline-block">&#xF6AE;</span> <h3 class="text-xl font-semibold mb-2">Google Gemini AI Chatbots</h3>
+                        <p class="text-gray-600">Developing intelligent chatbots and AI features within your FlutterFlow apps using Gemini.</p>
+                    </div>
+                    <div class="card text-center">
+                        <span class="lucide text-3xl text-indigo-600 mb-3 inline-block">&#xF4AE;</span> <h3 class="text-xl font-semibold mb-2">Authentication & JWT</h3>
+                        <p class="text-gray-600">Implementing secure user authentication flows, including JWT, social logins (Discord, Apple).</p>
+                    </div>
+                    <div class="card text-center">
+                        <span class="lucide text-3xl text-indigo-600 mb-3 inline-block">&#xF1FD;</span> <h3 class="text-xl font-semibold mb-2">API Integration & Backend</h3>
+                        <p class="text-gray-600">Connecting your FlutterFlow app to third-party services or custom backends (like Laravel).</p>
+                    </div>
+                     <div class="card text-center">
+                        <span class="lucide text-3xl text-indigo-600 mb-3 inline-block">&#xF50F;</span> <h3 class="text-xl font-semibold mb-2">UI/UX Design for FlutterFlow</h3>
+                        <p class="text-gray-600">Designing intuitive and visually appealing user interfaces directly within FlutterFlow.</p>
+                    </div>
+                     <div class="card text-center">
+                        <span class="lucide text-3xl text-indigo-600 mb-3 inline-block">&#xF696;</span> <h3 class="text-xl font-semibold mb-2">Custom Workflows & State</h3>
+                        <p class="text-gray-600">Implementing complex business logic, custom functions, and state management.</p>
+                    </div>
+                     <div class="card text-center">
+                        <span class="lucide text-3xl text-indigo-600 mb-3 inline-block">&#xF6E5;</span> <h3 class="text-xl font-semibold mb-2">Maintenance & Optimization</h3>
+                        <p class="text-gray-600">Providing ongoing support, updates, and performance optimization for your apps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title">Projects & Portfolio <span class="lucide">&#xF4A9;</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card">
+                        <img src="https://placehold.co/600x400/e0e7ff/4f46e5?text=Project+1" alt="Project 1 Screenshot" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Project Title 1</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Brief description of the project and your role. Highlight key features.</p>
+                        <p class="text-sm font-medium text-indigo-600 mb-3">Tech Stack: FlutterFlow, Firebase Auth, Firestore</p>
+                        <a href="#" class="text-indigo-600 hover:underline text-sm font-semibold">View Demo <span class="lucide text-xs">&#xF4BA;</span></a>
+                    </div>
+                    <div class="card">
+                        <img src="https://placehold.co/600x400/ede9fe/4338ca?text=Project+2" alt="Project 2 Screenshot" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Project Title 2</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Another project description focusing on different challenges or technologies used.</p>
+                        <p class="text-sm font-medium text-indigo-600 mb-3">Tech Stack: FlutterFlow, Gemini API, Custom Functions</p>
+                        <a href="#" class="text-indigo-600 hover:underline text-sm font-semibold">Case Study <span class="lucide text-xs">&#xF4BA;</span></a>
+                    </div>
+                    <div class="card">
+                        <img src="https://placehold.co/600x400/dbeafe/3730a3?text=Project+3" alt="Project 3 Screenshot" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Project Title 3</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Description emphasizing UI/UX design or specific integrations like Laravel.</p>
+                        <p class="text-sm font-medium text-indigo-600 mb-3">Tech Stack: FlutterFlow, Laravel API, JWT Auth</p>
+                         <a href="#" class="text-indigo-600 hover:underline text-sm font-semibold">Live App <span class="lucide text-xs">&#xF4BA;</span></a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title">Blog / Articles <span class="lucide">&#xF14B;</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card">
+                         <img src="https://placehold.co/600x400/f3e8ff/7e22ce?text=Blog+1" alt="Blog Post 1 Image" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">How to Build a Fully Functional App in FlutterFlow</h3>
+                        <p class="text-gray-600 mb-3 text-sm">A step-by-step guide covering the basics to advanced features for building apps.</p>
+                        <a href="#" class="text-indigo-600 hover:underline text-sm font-semibold">Read More &rarr;</a>
+                    </div>
+                    <div class="card">
+                         <img src="https://placehold.co/600x400/ecfccb/65a30d?text=Blog+2" alt="Blog Post 2 Image" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Integrating Firebase with FlutterFlow – A Complete Guide</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Explore authentication, database interactions, and storage setup with Firebase.</p>
+                        <a href="#" class="text-indigo-600 hover:underline text-sm font-semibold">Read More &rarr;</a>
+                    </div>
+                    <div class="card">
+                         <img src="https://placehold.co/600x400/fef9c3/ca8a04?text=Blog+3" alt="Blog Post 3 Image" class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h3 class="text-xl font-semibold mb-2">Mastering State Management in FlutterFlow</h3>
+                        <p class="text-gray-600 mb-3 text-sm">Understanding how FlutterFlow handles state and best practices (inspired by Riverpod/Provider).</p>
+                        <a href="#" class="text-indigo-600 hover:underline text-sm font-semibold">Read More &rarr;</a>
+                    </div>
+                </div>
+                 <div class="text-center mt-12">
+                     <a href="#" class="cta-button bg-purple-600 hover:bg-purple-700">View All Posts</a>
+                 </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h2 class="section-title">Contact Me <span class="lucide">&#xF4E4;</span></h2>
+                <p class="text-center text-gray-600 mb-8">
+                    Ready to start your project or have a question? Get in touch!
+                </p>
+                <form action="#" method="POST" class="space-y-6">
+                     <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" name="email" id="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                     <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                        <input type="text" name="subject" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea name="message" id="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="cta-button">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+
+                <div class="mt-12 text-center">
+                    <p class="text-gray-600 mb-2">Or reach out directly:</p>
+                    <a href="mailto:razawebdesigner@gmail.com" class="text-indigo-600 hover:underline font-medium">razawebdesigner@gmail.com</a>
+                    <div class="flex justify-center space-x-6 mt-6">
+                        <a href="YOUR_PORTFOLIO_LINK" target="_blank" rel="noopener noreferrer" title="Portfolio" class="text-gray-500 hover:text-indigo-600">
+                           <span class="lucide text-2xl">&#xF406;</span> </a>
+                        <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="text-gray-500 hover:text-indigo-600">
+                           <span class="lucide text-2xl">&#xF4B9;</span> </a>
+                        <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener noreferrer" title="GitHub" class="text-gray-500 hover:text-indigo-600">
+                           <span class="lucide text-2xl">&#xF3F5;</span> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; <span id="current-year"></span> Ahmed Raza Ahmad. All rights reserved.</p>
+             <p class="text-sm mt-1">Building Scalable No-Code & Low-Code Apps with FlutterFlow</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Optional: Smooth scroll for internal links (already handled by html class="scroll-smooth")
+        // Add any other simple JS interactions here if needed.
+    </script>
+
+</body>
+</html>
