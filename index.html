@@ -1,125 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raza FullStack Developer</title>
+    <title>Ahmad Raza - Flutter Developer Resume & Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description"
+        content="Resume and Portfolio of Ahmad Raza, a Senior Flutter Developer with 5+ years of experience in mobile apps, Laravel, Firebase, and AI integrations.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <nav>
-        <div class="logo">RAZA</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+    <!-- Background Animation Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Ahmad Raza Ahmad</h1>
-            <h2>Flutter & FlutterFlow Developer</h2>
-            <p>Crafting beautiful mobile experiences with modern technologies. Specializing in creating responsive, 
-            user-centric applications using Flutter, FlutterFlow, and RESTful APIs. From elegant UI designs to 
-            seamless backend integration, I transform ideas into powerful mobile solutions that users love.</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="profile-image">
-                <img src="https://iili.io/2P6rjnt.jpg" alt="Ahmad Raza Ahmad" id="profile-pic" border="0">
-            </div>
-            <div class="about-text">
-                <p>I am a passionate Flutter and FlutterFlow developer with expertise in API integration. I specialize in creating beautiful, responsive, and user-friendly mobile applications that deliver exceptional user experiences.</p>
-                <p>With a strong foundation in mobile development and API implementation, I bring ideas to life through clean code and modern design principles.</p>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Ahmad<span class="accent">Raza</span>.</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#expertise" class="nav-link">Expertise</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link btn btn-primary nav-btn">Let's Talk</a>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>Flutter</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-mobile-alt"></i>
-                <h3>FlutterFlow</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-plug"></i>
-                <h3>API Integration</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>Backend Development</h3>
-            </div>
-        </div>
-    </section>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-overlay">
+        <div class="close-menu" id="close-menu"><i class="fas fa-times"></i></div>
+        <nav class="mobile-links">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#expertise" class="mobile-link">Expertise</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </nav>
+    </div>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://cdn.pixabay.com/photo/2020/03/19/21/25/workspace-4948837_1280.jpg" alt="Flutter Mobile App">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container pt-5">
+            <div class="hero-content reveal fade-up">
+                <div class="hero-badge">Available for Hire</div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Ahmad Raza</span>.<br>
+                    Building <span class="gradient-text">Scalable</span> Mobile<br>
+                    Applications.
+                </h1>
+                <p class="hero-subtitle">
+                    Senior Flutter Developer with 5+ years of experience crafting production-ready mobile apps, robust
+                    Laravel backends, and cutting-edge AI integrations.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary btn-lg">View Projects</a>
+                    <a href="javascript:window.print()" class="btn btn-outline btn-lg"><i
+                            class="fa-solid fa-download mr-2"></i> Download Resume</a>
                 </div>
-                <h3>Project 1</h3>
-                <p>A Flutter-based mobile application with seamless API integration.</p>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://cdn.pixabay.com/photo/2018/03/27/12/16/analytics-3265840_1280.jpg" alt="FlutterFlow Project">
+
+                <div class="tech-stack mt-4">
+                    <span>Powered by:</span>
+                    <div class="tech-icons">
+                        <i class="fa-brands fa-flutter" style="color: #42A5F5;"></i>
+                        <i class="fa-brands fa-laravel" style="color: #FF2D20;"></i>
+                        <i class="fa-solid fa-fire" style="color: #FFCA28;"></i>
+                    </div>
                 </div>
-                <h3>Project 2</h3>
-                <p>FlutterFlow project showcasing dynamic UI and real-time updates.</p>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://cdn.pixabay.com/photo/2021/01/21/14/44/laptop-5937580_1280.jpg" alt="API Project">
+
+            <div class="hero-visual reveal fade-left delay-1">
+                <div class="profile-card">
+                    <img src="Raza.jpg" alt="Raza - Flutter Developer" class="profile-img">
                 </div>
-                <h3>Project 3</h3>
-                <p>Custom API development and integration project.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-content">
-            <form id="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+    <!-- Expertise Section -->
+    <section class="expertise section-padding" id="expertise">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2 class="section-title">My <span class="gradient-text">Expertise</span></h2>
+                <p class="section-desc">Delivering end-to-end solutions, from beautiful pixel-perfect UIs to scalable
+                    robust backends.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card glass-card reveal fade-up delay-1">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-flutter"></i>
+                    </div>
+                    <h3 class="skill-title">Flutter / Dart</h3>
+                    <p class="skill-desc">Expert in building cross-platform mobile apps for iOS and Android with single
+                        codebase, custom animations, and complex UIs.</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-card glass-card reveal fade-up delay-2">
+                    <div class="skill-icon" style="color: #00B4AB;">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <h3 class="skill-title">Clean Architecture</h3>
+                    <p class="skill-desc">Structuring applications for scalability, testability, and maintainability.
+                        Deep experience with Riverpod for robust state management.</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-card glass-card reveal fade-up delay-3">
+                    <div class="skill-icon" style="color: #FF2D20;">
+                        <i class="fa-brands fa-laravel"></i>
+                    </div>
+                    <h3 class="skill-title">Laravel Backend</h3>
+                    <p class="skill-desc">Developing secure, scalable RESTful APIs, database design, and admin panels
+                        using PHP and the Laravel framework.</p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-card glass-card reveal fade-up delay-1">
+                    <div class="skill-icon" style="color: #FFCA28;">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <h3 class="skill-title">Firebase</h3>
+                    <p class="skill-desc">Integrating real-time databases, cloud storage, authentication, and push
+                        notifications to build engaging mobile experiences.</p>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="skill-card glass-card reveal fade-up delay-2">
+                    <div class="skill-icon" style="color: #A855F7;">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="skill-title">AI Integration</h3>
+                    <p class="skill-desc">Seamlessly embedding intelligent features into mobile apps by communicating
+                        with external Large Language Models (LLMs) and ML backends.</p>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="skill-card glass-card reveal fade-up delay-3">
+                    <div class="skill-icon" style="color: #4ADE80;">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="skill-title">API & Web Services</h3>
+                    <p class="skill-desc">Designing and consuming RESTful and GraphQL APIs focusing on performance
+                        optimization and secure data transmission.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/quickthinkai" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="raza2025" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://pk.linkedin.com/in/raza2025?trk=profile-badge">AHMAD RAZA AHMAD</a></div>
-              
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    <!-- Experience Overview -->
+    <section class="experience section-padding" id="about">
+        <div class="container">
+            <div class="experience-wrapper glass-card reveal fade-up">
+                <div class="exp-content">
+                    <h2 class="section-title">5+ Years of <br><span class="gradient-text">Mobile Innovation</span></h2>
+                    <p class="exp-text">
+                        Over the past half-decade, I've transitioned from crafting simple utility apps to engineering
+                        highly scalable, enterprise-level mobile platforms used by thousands of users.
+                    </p>
+                    <p class="exp-text">
+                        My philosophy revolves around not just writing code, but solving real business problems. I
+                        leverage clean architecture and carefully architected state management (Riverpod) to ensure my
+                        codebases remain maintainable long after deployment.
+                    </p>
+                    <div class="exp-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Apps Delivered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Success</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>&copy; 2025 Ahmad Raza Ahmad. All rights reserved.</p>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="projects section-padding" id="projects">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-desc">A selection of my recent work published on app stores, demonstrating my ability
+                    to build polished apps from scratch.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card reveal fade-up">
+                    <div class="project-image" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%);">
+                        <div class="app-icon-placeholder">
+                            <img src="https://image.winudf.com/v2/image1/ZGV2X2ltYWdlXzI5NjEyMzczXzIyOTc1NF8yMDI2MDIwODE5NTA0OTA4Mw/icon.webp?w=140&fakeurl=1&type=.webp"
+                                alt="Sasti Dawaee App Icon" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <h3 class="project-title">Sasti Dawaee</h3>
+                        <p class="project-desc">A comprehensive healthcare platform designed to provide affordable
+                            medicine alternatives. Built with an intuitive UX and robust backend integration.</p>
+                        <a href="https://apkpure.com/p/io.github.quickthinkai.sastidawaee" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline btn-sm shadow-hover">View on APKPure <i
+                                class="fa-solid fa-arrow-up-right-from-square ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card reveal fade-up delay-1">
+                    <div class="project-image" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);">
+                        <div class="app-icon-placeholder">
+                            <img src="https://image.winudf.com/v2/image1/ZGV2X2ltYWdlXzI5NjEyMzczXzIyOTc1NF8yMDI0MTIyMjA0MzMwNTgyMQ/icon.webp?w=140&fakeurl=1&type=.webp"
+                                alt="Horse Power Calculator App Icon"
+                                style="width: 100%; height: 100%; border-radius: 30px; object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Utility</span>
+                            <span class="tag">Riverpod</span>
+                        </div>
+                        <h3 class="project-title">Horse Power Calculator</h3>
+                        <p class="project-desc">An engineered utility app with complex mathematical computations and a
+                            fluid user interface, providing accurate technical conversions on the go.</p>
+                        <a href="https://apkpure.com/p/com.mycompany.horsepowercaculator" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-outline btn-sm shadow-hover">View on APKPure <i
+                                class="fa-solid fa-arrow-up-right-from-square ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 reveal fade-up">
+                <p class="text-muted mb-3">And many more enterprise and consumer applications...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-box glass-card reveal fade-up">
+                <div class="contact-content text-center">
+                    <h2 class="contact-title">Ready to build something <span class="gradient-text">amazing</span>?</h2>
+                    <p class="contact-desc">Whether you need a full-stack mobile solution, an AI-integrated app, or an
+                        expert to architect your next big project, I'm here to help.</p>
+                    <div class="contact-actions mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="mailto:razawebdesigner@gmail.com" class="btn btn-primary btn-lg"><i
+                                class="fa-solid fa-envelope mr-2"></i> Send an Email</a>
+                        <a href="https://www.linkedin.com/in/razabwn" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-lg"><i class="fa-brands fa-linkedin mr-2"></i> LinkedIn</a>
+                        <a href="https://github.com/quickthinkai" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-lg"><i class="fa-brands fa-github mr-2"></i> GitHub</a>
+                        <a href="https://www.fiverr.com/raza_flutter" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-lg"><i class="fa-solid fa-handshake mr-2"></i> Fiverr</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Ahmad<span class="accent">Raza</span>.</span>
+                </div>
+                <p class="footer-text">&copy; 2026 Ahmad Raza. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
+    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
+
 </html>
